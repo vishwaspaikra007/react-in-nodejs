@@ -17,8 +17,8 @@ app.use(cors(
     {origin: ['http://127.0.0.1:3000', 
     'http://localhost:3000', 
     'https://vishwaspaikra007.github.io', 
-    'https://adrixus-fronend.web.app/',
-    'https://adrixus-fronend.firebaseapp.com/'],
+    'https://adrixus-fronend.web.app',
+    'https://adrixus-fronend.firebaseapp.com'],
      credentials: true}
      ))
 app.options('*', cors())  // enable pre-flight request for complex cors request for every route
