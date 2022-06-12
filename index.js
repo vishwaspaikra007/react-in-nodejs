@@ -14,7 +14,7 @@ const passport = require('./routes/passport')
 require('./routes/customPassportAuthenticate')(passport)
 const cors = require('cors')
 app.use(cors(
-    {origin: ['http://127.0.0.1:3000', 'http://localhost:3000', 'https://vishwaspaikra007.github.io/adrixus-frontend'],
+    {origin: ['http://127.0.0.1:3000', 'http://localhost:3000', 'https://vishwaspaikra007.github.io'],
      credentials: true}
      ))
 app.options('*', cors())  // enable pre-flight request for complex cors request for every route
