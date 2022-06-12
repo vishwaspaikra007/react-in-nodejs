@@ -6,6 +6,9 @@ module.exports = (passport) => {
             if(user){ 
                 req.user = user
                 next()
+            } else {
+                req.user = null
+                next()
             }
         })(req, res, next)
     }
